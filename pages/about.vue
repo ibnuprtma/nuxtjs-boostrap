@@ -169,20 +169,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col text-center">
-                    <img src="/assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
-                    <h3>Achmad Fatoni</h3>
-                    <h5>Founder</h5>
-                </div>
-                <div class="col text-center">
-                    <img src="/assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
-                    <h3>Arryangga Aliev P.</h3>
-                    <h5>Founder</h5>
-                </div>
-                <div class="col text-center">
-                    <img src="/assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
-                    <h3>Antoni Putra</h3>
-                    <h5>Founder</h5>
+                <div class="col text-center" v-for="team in teams" :key="team.id">
+                    <img :src= team.img alt="" class="img-fluid">
+                    <h3>{{team.nama}}</h3>
+                    <h5>{{team.jabatan}}</h5>
                 </div>
             </div>
             <div class="row">
@@ -202,7 +192,22 @@
 export default {
   components: {
  
+  },
+
+  data(){
+      return{
+
+          teams:[
+
+            {id:1, img : '/assets/img/2x/teamprofile-section_tim_kita.png', nama:'Achmad Fatoni', jabatan:'Founder'},
+            {id:2, img : '/assets/img/2x/teamprofile-section_tim_kita.png', nama:'Arryangga Aliev P.', jabatan:'Founder'},
+            {id:3, img : '/assets/img/2x/teamprofile-section_tim_kita.png', nama:'Antoni Putra', jabatan:'Founder'}
+
+          ]
+
+      };
   }
+
 }
 </script>
 
