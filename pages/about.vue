@@ -63,7 +63,7 @@
       <div class="container">
           <div class="row">
               <div class="col text-center">
-                  <h1>Visi Kami</h1>
+                  <h1 class="title-style">Visi Kami</h1>
               </div>
           </div>
           <div class="row visimisi-section-row">
@@ -80,7 +80,7 @@
           </div>
           <div class="row mt-5">
               <div class="col text-center">
-                  <h1>Misi Kami</h1>
+                  <h1 class="title-style">Misi Kami</h1>
               </div>
           </div>
           <div class="row">
@@ -99,7 +99,7 @@
       <div class="container">
           <div class="row mb-5">
               <div class="col text-center">
-                  <h1>Program kegiatan Kami</h1>
+                  <h1 class="title-style">Program kegiatan Kami</h1>
               </div>
           </div>
           <div class="row program-section-row">
@@ -153,7 +153,7 @@
           </div>
           <div class="row">
               <div class="col text-center">
-                  <h1>Program kami yang lainya</h1>
+                  <h1 class="title-style">Program kami yang lainya</h1>
                   <button type="button" class="btn btn-green mt-3">Klik Disini</button>
               </div>
           </div>
@@ -165,7 +165,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
-                    <h1>Tim Kami</h1>
+                    <h1 class="title-style">Tim Kami</h1>
                 </div>
             </div>
             <div class="row">
@@ -264,7 +264,7 @@ export default {
           left: 0;
       }
 
-      h1{
+      .title-style{
         text-shadow: 2px 5px 2px rgba(34,30,43,0.17);
         color: #008000;
         font-weight: bold;
